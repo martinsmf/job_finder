@@ -44,6 +44,9 @@ app.get('/', (req, res) => {
             res.render('index', {
                 jobs
             });
+        })
+        .catch(err => {
+            console.log("O correu um erro:" + err)
         });
 });
 
