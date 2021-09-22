@@ -66,7 +66,8 @@ app.get('/', (req, res) => {
                 res.render('index', {
                     jobs, search
                 });
-            });
+            })
+            .catch(err => console.log("Ocorreu um erro:" + err));
     }
 });
 
